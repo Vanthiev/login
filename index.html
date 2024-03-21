@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form Register</title>
+    <style>
+      body {
+        background: transparent;
+      }
+
+      form#form {
+        position: relative;
+        background: #fff;
+        top: 2rem;
+        border: 1px solid gray;
+        width: 250px;
+        height: 390px;
+        padding: 12px 12px 12px 12px;
+        /* margin: auto; */
+        border-radius: 10px;
+        margin: 12px;
+      }
+
+      input {
+        padding: 4px;
+        border-radius: 8px;
+        margin-top: 8px;
+        border: 1px solid gray;
+      }
+
+      button[type="submit"] {
+        background: rgba(0, 0, 255, 0.825);
+        color: white;
+        border-radius: 8px;
+        width: 170px;
+        padding: 4px;
+        border: none;
+      }
+
+      button[type="button"] {
+        width: 170px;
+        padding: 6px;
+        border-radius: 8px;
+        border: none;
+        margin: 4px;
+      }
+
+      button.fb {
+        position: relative;
+        padding: 6px;
+        color: white;
+        background: blue;
+      }
+
+      button.google {
+        border: 1px solid gray;
+        position: relative;
+      }
+
+      .icon {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+
+      button[name="SignUp"] {
+        margin-top: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="get" id="form">
+        <center>
+          <h1>Login</h1>
+          <input type="email" name="email" placeholder="Email" /> <br />
+          <input type="password" name="password" placeholder="Password" />
+          <br />
+          <h4>Forgot Password?</h4>
+          <button name="Login" type="submit" name="Login">Login</button>
+          <h4>
+            Don't have as account?
+            <span style="color: rgba(0, 0, 255, 0.825)">Signup</span> <br />
+            _________ Or _________
+          </h4>
+          <button type="button" class="fb">
+            <span class="icon"
+              ><img src="./Facebook.png" alt="facebook" width="19px"
+            /></span>
+            &nbsp&nbsp Login With Facebook
+          </button>
+          <br />
+          <button type="button" class="google">
+            <span class="icon"
+              ><img src="./Google icon.png" alt="google" width="19px" /></span
+            >Login With Google
+          </button>
+        </center>
+      </form>
+      <!-- Signup Form -->
+      <form action="" method="get" id="form">
+        <center>
+          <h1>SignUp</h1>
+          <input type="email" name="email" placeholder="Email" /> <br />
+          <input type="password" name="password" placeholder="Password" />
+          <br />
+          <input type="password" name="password" placeholder="Re-Password" />
+          <br />
+          <button name="SignUp" type="submit" name="SignUp">SignUp</button>
+          <h4>
+            Already have an account?
+            <span style="color: rgba(0, 0, 255, 0.825)">Login</span> <br />
+            _________ Or _________
+          </h4>
+          <button type="button" class="fb">
+            <span class="icon"
+              ><img src="./Facebook.png" alt="facebook" width="19px"
+            /></span>
+            &nbsp&nbsp Login With Facebook
+          </button>
+          <br />
+          <button type="button" class="google">
+            <span class="icon"
+              ><img src="./Google icon.png" alt="google" width="19px" /></span
+            >Login With Google
+          </button>
+        </center>
+      </form>
+    </div>
+  </body>
+</html>
